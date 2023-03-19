@@ -1,0 +1,1 @@
+# Components will be created as a package and it can be imported to some other file location so we need to use __init__.py file
