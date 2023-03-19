@@ -1,3 +1,3 @@
 # Any functionalities that we are writing in a common way, which will be used in entire application.
 # Ex-- we can read a dataset from a database for that we need to create mongodb client here, if we want to save our model in cloud, etc all these codes will be written here.
-# In end we will call this Utils code inside components module -> files whenever we are going to use that specific code for db, cloud etc.
+# In end we will call this Utils code inside components module files whenever we are going to use that specific code for db, cloud, model evaluation, finding best models etc.
