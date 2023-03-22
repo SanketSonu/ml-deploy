@@ -6,7 +6,7 @@ import os
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
-application=Flask(__name__,static_folder="static")
+application=Flask(__name__)   # We can provide static_folder="static" here as well if we don't want to provide that in index.html
 
 app=application
 
