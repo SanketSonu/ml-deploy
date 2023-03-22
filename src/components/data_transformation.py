@@ -18,7 +18,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl") # We can create any model etc and save that into the pickle file in specific path
+    preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl") # We can create any model etc and save that into the pickle file in specific path
 
 class DataTransformation:
     def __init__(self):

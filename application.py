@@ -1,11 +1,12 @@
 from flask import Flask,request,render_template
 import numpy as np
 import pandas as pd
+import os
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
-application=Flask(__name__)
+application=Flask(__name__,static_folder="static")
 
 app=application
 
@@ -35,7 +36,7 @@ def predict_datapoint():
 
         predict_pipeline=PredictPipeline()
         results=predict_pipeline.predict(pred_df)
-        return render_template('home.html',results=results[0])
+        return render_template('home.html',results=round(results[0], 1))  # Making result score round to 1 digit after decimal
     
 
 if __name__=="__main__":
