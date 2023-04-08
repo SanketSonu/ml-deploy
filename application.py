@@ -40,5 +40,5 @@ def predict_datapoint():
     
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")           # debug = True   -> If want to activate debug in chrome but it doesn't support in AWS CICD
+    app.run(host="0.0.0.0", port=5000)           # debug = True   -> If want to activate debug in chrome but it doesn't support in AWS CICD
 

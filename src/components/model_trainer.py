@@ -32,10 +32,10 @@ class ModelTrainer:
         try:
             logging.info("Split training and test input data")
             X_train,y_train,X_test,y_test=(
-                train_array[:,:-1],
-                train_array[:,-1],
-                test_array[:,:-1],
-                test_array[:,-1]
+                train_array[:,:-1],            # X_train
+                train_array[:,-1],             # y_train
+                test_array[:,:-1],             # X_test
+                test_array[:,-1]               # y_test
             )
             models = {
                 "Random Forest": RandomForestRegressor(),
