@@ -132,3 +132,4 @@ dmypy.json
 AWS_sanketsonu_keys.csv
 
 desktop.ini
+**/desktop.ini
