@@ -130,3 +130,5 @@ dmypy.json
 
 # AWS Credentials
 AWS_sanketsonu_keys.csv
+
+desktop.ini
